@@ -41,5 +41,6 @@ export default memo(
   SideBar,
   (prevProps, nextProps) =>
     prevProps.selectedGenreId === nextProps.selectedGenreId &&
-    Object.is(prevProps.genres, nextProps.genres)
+    Object.is(prevProps.genres, nextProps.genres) &&
+    Object.is(prevProps.buttonClickCallback, nextProps.buttonClickCallback)
 );
